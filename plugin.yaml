@@ -1,0 +1,14 @@
+name: search-rerank
+version: "0.1.0"
+entry_point: main
+description: >
+  Optional second-stage cross-encoder for POST /retrieve/search.
+  Registers rerank=plugin:cross-encoder (K≤10). Does not run on
+  /retrieve/context. Core hybrid search works if this plugin is absent.
+author: BrainAPI
+brainapi_version: ">=2.17.0"
+tags:
+  - search
+  - rerank
+  - cross-encoder
+priority: 60
